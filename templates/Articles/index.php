@@ -1,5 +1,4 @@
 <h1>Articles List</h1>
-<h1><?=get_class($this);?></h1>
 <h3><?=$this->Html->link('Add New Article', ['action' => 'add']);?></h3>
 <table>
 	<thead>

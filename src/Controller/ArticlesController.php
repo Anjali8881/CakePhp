@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 class ArticlesController extends AppController {
+
 	public function initialize(): void{
 		parent::initialize();
 		$this->loadComponent('Paginator');
@@ -9,14 +10,22 @@ class ArticlesController extends AppController {
 	}
 
 	public function index() {
+
+		//$this->viewBuilder()->setLayout('ajax');
 		// $article = $this->Articles->newEmptyEntity();
-		// echo "<pre>";
+		//echo "<pre>";
 		// print_r($article);
 		// die();
-		// print_r(get_class($this));
+		//print_r(get_class_methods($this));
+		// print_r(get_class_methods($this->render()));
 		// die();
 		$articles = $this->Paginator->paginate($this->Articles->find());
 		$this->set(compact('articles'));
+		//$this->render('add');
+	}
+
+	public function home() {
+		$this->viewBuilder()->setLayout('blog');
 	}
 
 	public function add() {

@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+declare (strict_types = 1);
 
 /**
  * CakePHP(tm) : Rapid Development Framework (https://cakephp.org)
@@ -24,18 +24,16 @@ use Cake\View\View;
  *
  * @link https://book.cakephp.org/4/en/views.html#the-app-view
  */
-class AppView extends View
-{
-    /**
-     * Initialization hook method.
-     *
-     * Use this method to add common initialization code like loading helpers.
-     *
-     * e.g. `$this->loadHelper('Html');`
-     *
-     * @return void
-     */
-    public function initialize(): void
-    {
-    }
+class AppView extends View {
+	/**
+	 * Initialization hook method.
+	 *
+	 * Use this method to add common initialization code like loading helpers.
+	 *
+	 * e.g. `$this->loadHelper('Html');`
+	 *
+	 * @return void
+	 */
+	public function initialize(): void {
+	}
 }
